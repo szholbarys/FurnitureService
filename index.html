@@ -1,296 +1,174 @@
-*{
-    margin: 0;
-    padding: 0;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Quicksand&display=swap" rel="stylesheet">
 
-h1{
-    font-family: 'Playfair Display', serif;
-    font-size: 30px;
-}
+    <title>goldcourse</title>
+</head>
+<body>
+    <header>
+      <div class="container">
+        <img class="main-img" src="img/main.jpeg" alt="Snow" style="width:100%;">
+        <div class="centered">
+            <h1>Balgyn <br> Erbolatkyzy</h1> <br>
+            <p>Алтын саласының маманы. <br> Сізді табысқа жетелейтін ментор! </p>
+        </div>
+      </div>
+    </header>
 
-h3{
-    font-family: 'Playfair Display', serif;
-    font-size: 25px;
-}
+    <main>
+        <div class="main-container">
+            <img class="img-1" src="./img/img1.jpeg" alt="" width="250px" >
+            <div class="border"></div>
+            <h1>Мен <br> жайлы:</h1>
+        </div>
+    <div class="information-box">
+        <div class="information">
+            <div class="grid-item">
+                <h3 class="gold">3 ЖЫЛ</h3>
+                <p>ішінде өз күшіммен 2-машина, 2-квартира алдым</p>
+            </div>
+            <div class="grid-item">
+                <h3>300+</h3>
+                <p>астам адамға үйінде отырып ақша табуды үйреттім</p>
+            </div>
+            <div class="grid-item">
+                <h3>0 ден</h3>
+                <p>бастап барлығын өзім үйренгенмін</p>
+            </div>
+            <div class="grid-item">
+                <h3 class="gold">500-2млн</h3>
+                <p>аралығында ақша тауып отыр</p>
+            </div>
+        </div>
+    </div>
+        <div class="course-title">
+            <img class="info-img" src="./img/info-img.jpeg" alt="" width="220px">
+            <div class="border"></div>
+            <h1>Франшиза <br> курс <br> жайлы</h1>
+        </div>
+        <div class="course-info">
+            <p>"Алматы золото 1" дүкенінің курсын ала отырып сіздер сату мамандығын, онлайн платформадағы сауда, таргет пен инстаграм жүргізу, алтын туралы толық ақпарат. ИП жане банктермен жұмыс істеуді үйрене отырып қолыңызда товар болмасада тікелей "Aлматы золото 1" дүкенінін серіктесі бола аласыз!
+                Блок жүргізу арқылы онлайн уйде отырып ақша тапқысы келетін кез келген қыз келіншекке керек бизнес!</p>
+        </div>
+        
 
-p{
-    font-family: 'Quicksand', sans-serif;
-    font-size: 15px;
-}
+<div class="slideshow-container">
 
-.container {
-    position: relative;
-    text-align: center;
-    color: white;
-}
+    <h1>Кері байланыстар</h1>
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="./img/feedback/1.png" style="width:100%">
+      <div class="text"></div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="./img/feedback/2.png" style="width:100%">
+      <div class="text"></div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="./img/feedback/3.png" style="width:100%">
+      <div class="text"></div>
+    </div>
 
-.centered {
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border: 1px solid black;
-    padding: 10px;
-    width: 350px;
-    height: 170px;
-    text-align: justify;
-    backdrop-filter: blur(10px);
+    <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="./img/feedback/4.png" style="width:100%">
+        <div class="text"></div>
+      </div>
+     
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="./img/feedback/5.png" style="width:100%">
+        <div class="text"></div>
+      </div>
 
-}
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="./img/feedback/6.png" style="width:100%">
+        <div class="text"></div>
+      </div>
 
-.main-container {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 50px;
-}
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="./img/feedback/7.png" style="width:100%">
+        <div class="text"></div>
+      </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+    
+    <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
 
-.img-1 {
-    position: relative;
-    margin-top: 50px;
-    z-index: 2;
-}
-.border {
-    position: absolute;
-    z-index: 1;
-    border: 1px solid black;
-    padding: 10px;
-    width: 250px;
-    height: 300px;
-    margin-top: 30px;
-    text-align: justify;
-}
-
-.main-container h1 {
-    margin-top: 80px;
-    margin-left: 10px;
-}
-
-.gold{
-    color: rgb(153, 112, 63);
-}
-
-.information-box{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.info-img{
-    z-index: 2;
-}
-
-.information{
-    display: grid;
-    grid-template-columns: auto auto;
-    border: 1px solid black;
-    padding: 10px;
-    width: 330px;
-    height: 350px;
-    margin-top: 50px;
-    text-align: justify;
-    z-index: 1;
-}
-
-.grid-item {
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-}
-
-
-.course-title{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 50px;
-}
-
-.course-title h1{
-    margin-top: 100px;
-    margin-left: 10px;
-}
-
-.course-info {
-    border: 2px solid rgb(153, 112, 63);
-    padding: 20px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    background-color: rgb(153, 112, 63);
-}
-
-.course-info p{
-    color: white;
-}
-
-.price{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 50px;
-}
-
-span{
-    color: red;
-    text-decoration:line-through;
-}
-
-.btn{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-}
-
-.button {
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    width: 300px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin-top: 50px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    background-color: white; 
-    color: black; 
-    border: 2px solid #000000;
-    transition: transform 0.3s ease;
-}
-
-.button:hover{
-    transform: translateY(-10px);
-    background-color: rgb(0, 0, 0);
-    color: #fff;
-}
-
-footer{
-    width: 100%;
-    height: 200px;
-    margin-top: 100px;
-}
-
-footer h1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 50px;
-}
-
-.earrings{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-}
-
-.contact{
-    margin-top: 50px;
-    display: flex;
-    justify-content:space-evenly;
-}
-
-.contact a{
-    color: #000000;
-    font-size: 20px;
-    margin-bottom: 50px;
-}
-
-* {box-sizing: border-box
-}
-body {
-    margin:0
-}
-.mySlides {
-    display: none
-}
-img {
-    vertical-align: middle;
-}
-
-.slideshow-container {
-    position: relative;
-    margin: auto;
-  }
-
-.slideshow-container h1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 20px;
-}  
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-  
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
-  
-  .text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-  }
-  
-
-  .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
-  
-  .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  
-  .active, .dot:hover {
-    background-color: #717171;
-  }
-  
-  .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  
-  @keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-  }
-  
-  /* On smaller screens, decrease text size */
-  @media only screen and (max-width: 300px) {
-    .prev, .next,.text {font-size: 11px}
-  }
+        <div class="price">
+            <h1>Оффлайн курс <br>
+                баfасы:</h1>
+            <h1> <span>500.000</span> <br> 300.000тг</h1>
+        </div>
+        <div class="price">
+            <h1>Онлайн курс <br>
+                баfасы:</h1>
+            <h1> <span>300.000</span> <br> 150.000тг</h1>
+        </div>
+        <div class="btn">
+            <a href="https://api.whatsapp.com/send/?phone=77052028440&text=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82!+%EF%BF%BD+%D0%9C%D0%B5%D0%BD%D1%8F+%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D0%B5%D1%82...&type=phone_number&app_absent=0"><button class="button">Қатысамын</button></a>
+        </div>
+    </main>
+    <footer>
+        <div class="earrings">
+            <img src="./img/earrings.png" alt="earrings" width="200px">
+            <img src="./img/earrings.png" alt="earrings" width="200px">
+        </div>
+        <h1>Байланыс</h1>
+        <div class="contact">
+            <a href="https://api.whatsapp.com/send/?phone=77052028440&text=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82!+%EF%BF%BD+%D0%9C%D0%B5%D0%BD%D1%8F+%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D0%B5%D1%82...&type=phone_number&app_absent=0">WhatsApp</a>
+            <a href="">Instagram</a>
+        </div>
+    </footer>
+</body>
+</html>
